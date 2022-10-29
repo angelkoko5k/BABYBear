@@ -1,0 +1,121 @@
+   <div class="flex-1">
+    <div class="navbar grid grid-cols-5 grid grid-rows-2 box-content h-72 w-full p-4  bg-stone-700">
+
+        <div class="relative  col-start-1  animate-[spin_10s_linear_infinite] h-64 w-64  ml-[170px] mt-[100px] ">
+            <img src="/triangle.svg" >
+        </div>
+
+        <div class="animate-[spin_10s_linear_infinite] h-5 w-5 mr-3 mt-[30px]">
+            <img src="/triangle.svg" >
+        </div>
+
+        
+       
+        <div class="title col-start-3 col-span-4 w-[300px] mt-[50px] text-5xl text-center font-serif text-emerald-500">
+            BABYBEar
+            <div class="relative animate-[spin_10s_linear_infinite] h-5 w-5 ml-[290px] mt-[-54px] ">
+                <img src="/triangle.svg" >
+            </div>
+            <div class="animate-[spin_10s_linear_infinite] h-5 w-5 mr-3 mt-[30px]">
+                <img src="/triangle.svg" >
+            </div>
+        </div>
+
+        
+
+        <div class="box  relative grid grid-cols-5 grid-rows-5 col-start-1 col-span-5  ow-span-1  rounded-3xl ml-[10%] w-[80%] h-[800px] p-4  bg-white  shadow-2xl ">
+            <div class="grid grid-cols-10 col-start-1 col-span-5  ow-span-1 w-[100%] h-[100px] bg-green-400 rounded-[20px] border-4 border-slate-600">
+
+                <div class="col-start-1 animate-[spin_10s_linear_infinite] h-12 w-12 mr-3 mt-[17px] ml-[50px]">
+                    <img src="/triangle.svg" >
+                </div>
+
+                <div class="pt-[19px] w-[100%] col-start-2 col-span-8 font-serif text-gray-600  ">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+        </div>
+            </div>
+
+            <div id="vue-app" class="col-start-3  row-start-3 ">
+                
+                   
+
+                <input type="text" vlue="inputText">
+                <div class="pl-[75px]">
+                    <div class="red" v-if="color=='red'"></div>
+                    <div class="green" v-else-if="color=='green'"></div>
+                    <div class="blue" v-else></div>
+                </div>
+                
+                
+                <div class="box pl-[30px] pt-[20px] text-xl font-serif text-white ">
+                    <button @click="color = 'red' " class="w-16 bg-red-600 rounded-l-lg" >RED</button>
+                    <button @click="color = 'green'" class="w-18 bg-green-600 ">GREEN</button>
+                    <button @click="color = 'blue'"class="w-16 bg-sky-600 rounded-r-lg">BLUE</button>
+                </div>
+                
+                <div class="pt-[50px] pl-[35px]  ">
+
+                    <input type="text" v-model="inputText" class="h-[50px] pl-[70px] w-[185px] bg-slate-300 rounded-3xl   text-lg text-black border-2 border-black">
+                    
+                </div>
+    
+
+            </div>
+
+            <div class="col-start-2  row-start-3" >
+                <img src="/klee-genshin-impact.gif" >
+            </div>
+
+            <div class="col-start-4  row-start-3 col-span-2 row-span-2" >
+                <img src="/ganyu-dance.gif" >
+            </div>
+    </div>
+    <div class="animate-[spin_10s_linear_infinite] h-5 w-5 mr-3 mt-[30px] ">
+        <img src="/triangle.svg" >
+    </div>
+
+          
+    </div>
+
+    
+        
+   </div>
+    <div id="vue-app" class="text-9xl">
+      
+    </div>
+   
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <script>
+
+        var app = Vue.createApp({
+          data(){
+            return{
+                color:'red',
+                inputText:'Heloo',
+            }
+          }
+        })
+        app.mount("#vue-app")
+    </script>
+    <style>
+        .red, .blue , .green{
+            width: 100px;
+            height: 100px;
+        }
+    
+        .red{
+            border-radius: 50px;
+            background-color: red;
+        }
+        .blue{
+            border-radius: 0px;
+            background-color: blue;
+        }
+        .green{
+            border-radius: 25px;
+            background-color: green;
+        }
+    </style>
